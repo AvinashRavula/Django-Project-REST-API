@@ -1,0 +1,47 @@
+{% extends '_base.html' %}
+{% block title%} {{ title }} {%  endblock %}
+{% block content %}
+<center><h1>Students of <b>{{ college_name }}</b> </h1></center>
+    <div class="container">
+        {% if 'onlineapp.add_student' in user_permissions %}
+        <i class="fas fa-plus"></i><a href="{% url 'onlineapp:add_student_html' college_id %}">Add Student</a>
+
+        {% endif %}
+        <br/>
+        <br/>
+        <table class="table table-hover">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Student Total Marks</th>
+                {% if 'onlineapp.change_student' in user_permissions or 'onlineapp.delete_student' in user_permissions %}
+                    <th><center>Actions</center></th>
+                {% endif %}
+            </tr>
+            {% for data in student_list %}
+            <tr>
+                    <td>{{ data.name }}</td>
+                    <td>{{ data.email }}</td>
+                    <td>{{ data.mocktest1__total }}</td>
+                    {% if 'onlineapp.change_student' in user_permissions or 'onlineapp.delete_student' in user_permissions %}
+                    <td>
+                        {% if 'onlineapp.change_student' in user_permissions %}
+                            <div style="width:50%;height:100%;float:left">
+                                <a href="{% url 'onlineapp:edit_student_html' college_id data.id %}" ><i class="far fa-edit">edit</i></a>
+                            </div>
+                        {% endif %}
+                        {% if 'onlineapp.delete_student' in user_permissions %}
+                            <div style="width:50%;height:100%;float:right;">
+                                <form method="post" action="{% url 'onlineapp:delete_student_html' data.id %}">
+                                    {% csrf_token %}
+                                   <i class="fa fa-trash"> <input type="submit" class="btn-link" value="delete"/></i>
+                                </form>
+                            </div>
+                        {% endif %}
+                    </td>
+                    {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+{% block title%} {{ title }} {%  endblock %}
+{% block content %}
+<br/>
+<center><h1>{{ title }}</h1></center>
+<div class="container" style="width:50%">
+<form method="post" class="form-group">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="btn btn-primary" value="{{ title }}"/>
+</form>
+<a href="{% url 'onlineapp:signup_html' %}">SignUp</a>
+</div>
+{% endblock %}

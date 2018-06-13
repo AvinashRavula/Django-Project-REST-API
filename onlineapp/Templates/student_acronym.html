@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+    <h1>Students List</h1>
+    <style>
+    td:hover{
+        color:red;font-size:20px
+    }
+    </style>
+</head>
+<body>
+    <table border = 2 >
+        <tr>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Mock Result</th>
+        </tr>
+        {% for data in student_list %}
+        <tr>
+            <td>{{ data.student__name }}</td>
+            <td>{{ data.student__email }}</td>
+            <td> {{ data.total }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

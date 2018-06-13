@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>{% block title %}Django Project{% endblock %}</title>
+</head>
+<body>
+<div style="height:50px;background-color:black;">
+    <a href="#" style="float:left;font-size:25px;margin:5px;margin-top:5px;margin-left:20px;color:white">
+        OnlineApp
+    </a>
+    {% if request.user.is_authenticated %}
+    <form action="{% url 'onlineapp:logout_html' %}"  style="float:right;" method="post">
+        {% csrf_token %}
+        <button  type = "submit" class=" btn btn-logout" style="margin:5px;margin-top:5px;margin-right:20px;">Logout</button>
+    </form>
+    {% endif %}
+</div>
+{% block content %}{% endblock %}
+</body>
+</html>

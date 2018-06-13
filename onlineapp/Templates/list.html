@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Colleges List</title>
+
+    <style>
+    td:hover{
+        color:red;font-size:20px
+    }
+    </style>
+</head>
+<body>
+    <center><h1>Colleges</h1></center>
+    <div class="container">
+        <table class="table table-bordered" >
+            {% for data in set %}
+                <tr>
+                    {% for key, value in data.items %}
+                    <td> <a href="students?id={{ value }}" onclick="alert('Avinash')">{{ value }}</a></td>
+                    {% endfor %}
+                    {% endfor %}
+                </tr>
+        </table>
+    </div>
+</body>
+</html>

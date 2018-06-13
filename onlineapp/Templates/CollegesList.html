@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colleges List</title>
+    <h1>Colleges</h1>
+    <style>
+    td:hover{
+        color:red;font-size:20px
+    }
+    table td:hover{
+      border:blue 1px solid;
+    }
+    </style>
+</head>
+<body>
+    <table border = 2 >
+        <tr>
+            <th>College Name</th>
+            <th>College Acronym</th>
+
+        </tr>
+        <tr>
+            {% for data in college_list %}
+                <td>{{ data.name }}</td>
+                <td>{{ data.acronym }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
