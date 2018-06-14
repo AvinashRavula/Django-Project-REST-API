@@ -23,9 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9ghtwc3-7_ys9qk_62---g1s=7w3xgxar3@q$0hiqatly+3h*r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (

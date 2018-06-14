@@ -4,6 +4,7 @@ from django.forms import ModelForm
 from django.http import HttpResponse, JsonResponse
 from django.urls import reverse_lazy, resolve
 from django.views import View
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import ListView, DetailView, CreateView, FormView, UpdateView, DeleteView
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -127,6 +128,7 @@ def CollegeDetails_Serializer(request, college_id):
     return JsonResponse(serializer.data)
 
 
+@csrf_exempt
 @api_view(['GET', 'POST'])
 def college_serializer(request):
     if request.method == 'GET':
@@ -142,6 +144,7 @@ def college_serializer(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+@csrf_exempt
 @api_view(['GET', 'PUT', 'DELETE'])
 def college_detail_serializer(request, pk):
     """
