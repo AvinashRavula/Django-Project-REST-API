@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
     'rest_framework.authtoken',
+    'todolist.apps.TodolistConfig',
     'onlineapp.apps.OnlineappConfig',
     'django.contrib.admin',
     'django.contrib.auth',

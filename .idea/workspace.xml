@@ -6,21 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02484d2e-3189-41b0-9fbb-5c556982f1d2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/onlineapp/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineapp/serializers/CollegeSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineapp/serializers/Mocktest1Serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineapp/serializers/StudentDetailSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineapp/serializers/StudentSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineapp/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineapp/rest_apis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist/rest_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist/rest_api/todo_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist/serializers/todo_serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineapp/serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineapp/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineapp/views/College.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineapp/views/College.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineapp/views/rest_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineapp/views/rest_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineproject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineapp/rest_apis/CollegeAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineapp/rest_apis/StudentAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,62 +34,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentDetailSerializer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineapp/serializers/StudentDetailSerializer.py">
+      <file leaf-file-name="CollegeAPI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineapp/rest_apis/CollegeAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rest_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineapp/views/rest_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/onlineproject/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="-167">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineapp/models.py">
+        <entry file="file://$PROJECT_DIR$/todolist/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="136">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csrf.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python36-32/Lib/site-packages/django/views/decorators/csrf.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineproject/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="816">
+              <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python36-32/Lib/site-packages/django/core/handlers/base.py">
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todolist/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="125" column="68" selection-start-line="125" selection-start-column="68" selection-end-line="125" selection-end-column="68" />
+            <state relative-caret-position="51">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todolist/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo_api.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/todolist/rest_api/todo_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+                <marker date="1529008189774" expanded="true" signature="950:955" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +101,8 @@
       <file leaf-file-name="StudentSerializer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onlineapp/serializers/StudentSerializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -104,22 +111,10 @@
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onlineproject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="e#637#669#0" expanded="true" />
               </folding>
@@ -127,13 +122,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mocktest1Serializer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineapp/serializers/Mocktest1Serializer.py">
+      <file leaf-file-name="todo_serializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todolist/serializers/todo_serializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="46" lean-forward="true" selection-start-line="44" selection-end-line="46" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,14 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/onlineapp/migrations/CollegesList.html" />
-        <option value="$PROJECT_DIR$/onlineapp/CollegesList.html" />
-        <option value="$PROJECT_DIR$/onlinedb.py" />
-        <option value="$PROJECT_DIR$/onlineapp/Templates/CollegesList.html" />
-        <option value="$PROJECT_DIR$/onlineapp/Templates/student_mock.html" />
-        <option value="$PROJECT_DIR$/onlineapp/Templates/student_acronym.html" />
-        <option value="$PROJECT_DIR$/onlineapp/Templates/Error_page.html" />
-        <option value="$PROJECT_DIR$/onlineapp/admin.py" />
         <option value="$PROJECT_DIR$/onlineapp/views.py" />
         <option value="C:/Python36-32/Lib/site-packages/django/conf/global_settings.py" />
         <option value="$PROJECT_DIR$/onlineapp/Templates/list.html" />
@@ -209,19 +208,26 @@
         <option value="$PROJECT_DIR$/onlineapp/serializers/Mocktest1Serializer.py" />
         <option value="$PROJECT_DIR$/onlineapp/serializers/StudentSerializer.py" />
         <option value="$PROJECT_DIR$/onlineapp/serializers/StudentDetailSerializer.py" />
-        <option value="$PROJECT_DIR$/onlineapp/views/rest_api.py" />
         <option value="$PROJECT_DIR$/onlineapp/models.py" />
+        <option value="$PROJECT_DIR$/onlineapp/views/rest_api.py" />
+        <option value="$PROJECT_DIR$/onlineapp/rest-apis/CollegeAPI.py" />
+        <option value="$PROJECT_DIR$/onlineapp/rest-apis/StudentAPI.py" />
+        <option value="$PROJECT_DIR$/onlineapp/rest-apis/__init__.py" />
         <option value="$PROJECT_DIR$/onlineapp/urls.py" />
+        <option value="$PROJECT_DIR$/onlineapp/rest_apis/StudentAPI.py" />
+        <option value="$PROJECT_DIR$/todolist/urls.py" />
         <option value="$PROJECT_DIR$/onlineproject/urls.py" />
         <option value="$PROJECT_DIR$/onlineproject/settings.py" />
+        <option value="$PROJECT_DIR$/todolist/models.py" />
+        <option value="$PROJECT_DIR$/todolist/serializers/todo_serializer.py" />
+        <option value="$PROJECT_DIR$/todolist/rest_api/todo_api.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="x" value="14" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -246,7 +252,36 @@
             <path>
               <item name="onlineproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlineproject" type="462c0819:PsiDirectoryNode" />
+              <item name="onlineapp" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlineproject" type="462c0819:PsiDirectoryNode" />
+              <item name="onlineproject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlineproject" type="462c0819:PsiDirectoryNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlineproject" type="462c0819:PsiDirectoryNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlineproject" type="462c0819:PsiDirectoryNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="rest_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlineproject" type="462c0819:PsiDirectoryNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -409,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528946638909</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JWT,Basic Authentication Added">
+      <created>1528999493868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528999493868</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -445,13 +487,13 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50074404" side_tool="true" weight="0.39215687" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32352942" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3496732" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32352942" />
       <window_info id="Structure" order="1" sideWeight="0.5025126" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32843137" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.39215687" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -485,27 +527,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Rest API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Rest API" />
+    <MESSAGE value="JWT,Basic Authentication Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT,Basic Authentication Added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/django_queries.py</url>
           <line>22</line>
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/django_queries.py</url>
           <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/onlineapp/views_backup.py</url>
           <line>28</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/onlineapp/views_backup.py</url>
           <line>83</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -530,7 +573,7 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/onlineapp/views_backup.py</url>
           <line>90</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -584,65 +627,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/onlineapp/views/rest_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineapp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36-32/Lib/ntpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineapp/Templates/CollegesList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineapp/Templates/add_college.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="78" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineapp/Templates/add_student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineapp/Templates/login_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/onlineapp/Templates/signup_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -895,25 +879,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineapp/serializers/StudentSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/onlineapp/serializers/Mocktest1Serializer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="85">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
@@ -921,47 +892,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/onlineapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/onlineapp/views/rest_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/onlineapp/models.py">
+    <entry file="file://$PROJECT_DIR$/onlineapp/rest_apis/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="17">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineapp/rest_apis/StudentAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/onlineapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="241">
+          <caret line="46" lean-forward="true" selection-start-line="44" selection-end-line="46" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/onlineapp/rest_apis/CollegeAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/onlineproject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="323">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="e#637#669#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todolist/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/onlineproject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="816">
+          <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineapp/serializers/StudentSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist/serializers/todo_serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist/rest_api/todo_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+            <marker date="1529008189774" expanded="true" signature="950:955" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

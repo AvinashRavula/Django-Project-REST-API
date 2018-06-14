@@ -10,8 +10,8 @@ from django.conf.urls import include, url
 from onlineapp.views import CollegeView, CollegeListView, CollegeDetailsView, AddCollegeView, AddStudentView, \
     UpdateCollegeView, DeleteCollegeView, UpdateStudentView, DeleteStudentView, SignUpForm, SignUpFormView, \
     LoginFormView, logout_user
-from onlineapp.views.rest_api import college_get_put_delete_request_handler, college_get_post_request_handler, \
-    StudentGetPostRequestHandlerView, StudentGetPutDeleteRequestHandlerClass
+from onlineapp.rest_apis.CollegeAPI import college_get_put_delete_request_handler, college_get_post_request_handler
+from onlineapp.rest_apis.StudentAPI import StudentGetPostRequestHandlerView, StudentGetPutDeleteRequestHandlerClass
 
 app_name = 'onlineapp'
 

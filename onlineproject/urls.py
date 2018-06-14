@@ -25,7 +25,8 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('onlineapp/', include('onlineapp.urls'))
+    path('onlineapp/', include('onlineapp.urls')),
+    path('todolist/', include('todolist.urls'))
 ]
 
 if settings.DEBUG:
