@@ -13,7 +13,7 @@ from rest_framework.response import Response
 from onlineapp.models import College, Student, Mocktest1
 from django.shortcuts import render, get_object_or_404, redirect
 
-from onlineapp.serializer import OnlineappSerializer
+from onlineapp.serializers import CollegeSerializer
 
 
 class CollegeView(View):
@@ -120,52 +120,10 @@ class DeleteCollegeView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView)
         if kwargs:
             get_object_or_404(College, **kwargs).delete()
 
+#
+# def CollegeDetails_Serializer(request, college_id):
+#     college = get_object_or_404(College,pk = college_id)
+#     serializer = CollegeSerializer(college)
+#     # print(serializer.data)
+#     return JsonResponse(serializer.data)
 
-def CollegeDetails_Serializer(request, college_id):
-    college = get_object_or_404(College,pk = college_id)
-    serializer = OnlineappSerializer(college)
-    # print(serializer.data)
-    return JsonResponse(serializer.data)
-
-
-@csrf_exempt
-@api_view(['GET', 'POST'])
-def college_serializer(request):
-    if request.method == 'GET':
-        college = College.objects.all()
-        serializer = OnlineappSerializer(college, many=True)
-        return Response(serializer.data)
-
-    elif request.method == 'POST':
-        serializer = OnlineappSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-@csrf_exempt
-@api_view(['GET', 'PUT', 'DELETE'])
-def college_detail_serializer(request, pk):
-    """
-    Retrieve, update or delete a code college.
-    """
-    try:
-        college = College.objects.get(pk=pk)
-    except College.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
-
-    if request.method == 'GET':
-        serializer = OnlineappSerializer(college)
-        return Response(serializer.data)
-
-    elif request.method == 'PUT':
-        serializer = OnlineappSerializer(college, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    elif request.method == 'DELETE':
-        college.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)

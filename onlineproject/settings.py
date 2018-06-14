@@ -25,9 +25,9 @@ SECRET_KEY = '9ghtwc3-7_ys9qk_62---g1s=7w3xgxar3@q$0hiqatly+3h*r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['127.0.0.1']
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = []
+#
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -44,6 +44,7 @@ REST_FRAMEWORK = {
 INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
+    'rest_framework.authtoken',
     'onlineapp.apps.OnlineappConfig',
     'django.contrib.admin',
     'django.contrib.auth',

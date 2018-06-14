@@ -9,7 +9,9 @@ from django.conf.urls import include, url
 
 from onlineapp.views import CollegeView, CollegeListView, CollegeDetailsView, AddCollegeView, AddStudentView, \
     UpdateCollegeView, DeleteCollegeView, UpdateStudentView, DeleteStudentView, SignUpForm, SignUpFormView, \
-    LoginFormView, logout_user, CollegeDetails_Serializer, college_serializer, college_detail_serializer
+    LoginFormView, logout_user
+from onlineapp.views.rest_api import college_get_put_delete_request_handler, college_get_post_request_handler, \
+    StudentGetPostRequestHandlerView, StudentGetPutDeleteRequestHandlerClass
 
 app_name = 'onlineapp'
 
@@ -40,8 +42,11 @@ urlpatterns = [
     path('login/', LoginFormView.as_view(), name="login_html"),
     path('logout/', logout_user, name="logout_html"),
 
-    path('api/v1/colleges/<int:pk>',college_detail_serializer),
-    path('api/v1/colleges/',college_serializer),
+    path('api/v1/colleges/<int:pk>',college_get_put_delete_request_handler,name="college_get_put_delete_rest_api"),
+    path('api/v1/colleges/',college_get_post_request_handler,name="college_get_post_rest_api"),
 
-    url(r'^api-token-auth/', obtain_jwt_token),
+    path('api/v1/colleges/<int:pk>/students/', StudentGetPostRequestHandlerView.as_view(), name="student_get_post_rest_api"),
+    path('api/v1/colleges/<int:college_id>/students/<int:pk>', StudentGetPutDeleteRequestHandlerClass.as_view(), name="student_get_put_delete_rest_api"),
+
+
 ]

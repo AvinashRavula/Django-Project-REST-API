@@ -1,15 +1,16 @@
 from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer
 
-from onlineapp.models import College
+from onlineapp.models import College, Mocktest1, Student
 from onlineproject import settings
 
 
-class OnlineappSerializer(serializers.Serializer):
-    # id = serializers.IntegerField(read_only=True)
-    name = serializers.CharField(required=False, allow_blank=True, max_length=100)
-    location = serializers.CharField(style={'base_template': 'textarea.html'})
-    acronym = serializers.CharField(required=False)
-    contact = serializers.EmailField(required=False)
+class CollegeSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
+    name = serializers.CharField(required=True, allow_blank=True, max_length=100)
+    location = serializers.CharField(required=True,style={'base_template': 'textarea.html'})
+    acronym = serializers.CharField(required=True)
+    contact = serializers.EmailField(required=True)
 
     def create(self, validated_data):
         """
@@ -27,6 +28,5 @@ class OnlineappSerializer(serializers.Serializer):
         instance.contact = validated_data.get('contact', instance.contact)
         instance.save()
         return instance
-
 
 
