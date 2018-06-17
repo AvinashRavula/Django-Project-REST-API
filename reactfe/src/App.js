@@ -58,7 +58,7 @@ class App extends Component {
           <Switch>
           {/* <Router.Fragment> */}
           
-              <Route exact path="/" render={(props) => this.state.isAuthenticated 
+              <Route exact path="/onlineapp/templateview/" render={(props) => this.state.isAuthenticated 
                 ? 
                 <CollegeListContainer 
                   isAuthenticated={this.state.isAuthenticated}
@@ -70,17 +70,17 @@ class App extends Component {
                 //   username={this.state.username} updateUsername={this.updateUsername} 
                 //   updateStatus={this.updateLoginStatus}/>
                 
-                <Redirect to="/login"/>
+                <Redirect to="/onlineapp/templateview/login"/>
                }
               />
-              <Route exact path="/login" render={(props) =>
+              <Route exact path="/onlineapp/templateview/login" render={(props) =>
                 <Login 
                 isAuthenticated={this.state.isAuthenticated}
                 username={this.state.username} updateUsername={this.updateUsername} 
                 updateStatus={this.updateLoginStatus}/>
                 }
               />
-              <Route exact path="/college/:id" render={(props) =>
+              <Route exact path="/onlineapp/templateview/college/:id" render={(props) =>
                  <StudentListContainer {...props} updateHeading={this.updateTitle} />}/>
                  {/* <Route exact path="/college/:id" component={StudentListContainer}/> */}
           {/* </Router.Fragment> */}
