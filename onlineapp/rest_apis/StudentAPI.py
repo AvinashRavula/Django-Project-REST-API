@@ -20,7 +20,7 @@ class StudentGetPostRequestHandlerView(APIView):
         data = dict()
         data.update(request.data)
         data['college'] = kwargs.get('pk')
-        serializer = StudentSerializer(data=data)
+        serializer = StudentDetailSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -37,13 +37,13 @@ class StudentGetPutDeleteRequestHandlerClass(APIView):
 
     def delete(self, request, *args, **kwargs):
         college = get_object_or_404(College, pk=kwargs.get('college_id'))
-        student = get_object_or_404(Student, pk=kwargs.get('pk'))
+        student = get_object_or_404(Student, pk=kwargs.get('pk'),college=college)
         student.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
     def put(self, request, *args, **kwargs):
         college = get_object_or_404(College, pk=kwargs.get('college_id'))
-        student = get_object_or_404(Student, pk=kwargs.get('pk'))
+        student = get_object_or_404(Student, pk=kwargs.get('pk'), college=college)
         serializer = StudentDetailSerializer(student, data=request.data)
         if serializer.is_valid():
             serializer.save()

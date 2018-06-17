@@ -25,9 +25,11 @@ SECRET_KEY = '9ghtwc3-7_ys9qk_62---g1s=7w3xgxar3@q$0hiqatly+3h*r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
-# ALLOWED_HOSTS = []
-#
+CORS_ORIGIN_ALLOW_ALL = True
+
+# ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -39,11 +41,14 @@ REST_FRAMEWORK = {
     ),
 }
 
+
 # Application definition
 
 INSTALLED_APPS = [
     'debug_toolbar',
+    'webpack_loader',
     'rest_framework',
+    'corsheaders',
     'rest_framework.authtoken',
     'todolist.apps.TodolistConfig',
     'onlineapp.apps.OnlineappConfig',
@@ -59,6 +64,7 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -72,7 +78,7 @@ ROOT_URLCONF = 'onlineproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'onlineapp/Templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,17 +93,30 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'onlineproject.wsgi.application'
 
+WEBPACK_LOADER = {
+    'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'bundles/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
+        }
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+#DATABASES = {
+#   'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'mrnd',
+#        'HOST': 'localhost',
+#        'USER':"avinash",
+#        'PASSWORD': "avinash"
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mrnd',
-        'HOST': 'localhost',
-        'USER':"avinash",
-        'PASSWORD': "avinash"
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

@@ -10,8 +10,8 @@ from onlineapp.serializers.CollegeSerializer import CollegeSerializer
 
 
 @api_view(['GET', 'POST'])
-@authentication_classes((SessionAuthentication, BasicAuthentication))
-@permission_classes((IsAuthenticated,))
+# @authentication_classes((SessionAuthentication, BasicAuthentication))
+# @permission_classes((IsAuthenticated,))
 def college_get_post_request_handler(request):
     if request.method == 'GET':
         college = College.objects.all()
@@ -27,8 +27,8 @@ def college_get_post_request_handler(request):
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
-@authentication_classes((SessionAuthentication, BasicAuthentication))
-@permission_classes((IsAuthenticated,))
+# @authentication_classes((SessionAuthentication, BasicAuthentication))
+# @permission_classes((IsAuthenticated,))
 def college_get_put_delete_request_handler(request, pk):
     """
     Retrieve, update or delete a code college.

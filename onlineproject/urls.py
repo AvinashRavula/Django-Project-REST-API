@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.authtoken.views import obtain_auth_token
 from rest_framework_jwt.views import obtain_jwt_token
 
 from onlineapp import views
@@ -26,12 +27,15 @@ from django.conf.urls import include, url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('onlineapp/', include('onlineapp.urls')),
-    path('todolist/', include('todolist.urls'))
+    path('todolist/', include('todolist.urls')),
+    url(r'^api-jwttoken-auth/', obtain_jwt_token),
+    url(r'^api-basictoken-auth/', obtain_auth_token),
 ]
 
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns = [
         url(r'^__debug__/', include(debug_toolbar.urls)),
-        url(r'^api-token-auth/', obtain_jwt_token),
+        url(r'^api-jwttoken-auth/', obtain_jwt_token),
+        url(r'^api-basictoken-auth/', obtain_auth_token),
     ] + urlpatterns

@@ -13,8 +13,7 @@ class StudentDetailSerializer(ModelSerializer):
     def create(self, validated_data, **kwargs):
         mocktest1_data = validated_data.pop('mocktest1')
         student = Student.objects.create(**validated_data)
-        if hasattr(validated_data, 'mocktest1'):
-            mocktest1_temp = Mocktest1Serializer(**mocktest1_data,student=student)
+        Mocktest1.objects.create(**mocktest1_data,student=student)
         return student
 
     def update(self, instance, validated_data):

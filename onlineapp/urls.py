@@ -6,6 +6,7 @@ from onlineapp import views
 
 from django.conf import settings
 from django.conf.urls import include, url
+from django.views.generic import TemplateView
 
 from onlineapp.views import CollegeView, CollegeListView, CollegeDetailsView, AddCollegeView, AddStudentView, \
     UpdateCollegeView, DeleteCollegeView, UpdateStudentView, DeleteStudentView, SignUpForm, SignUpFormView, \
@@ -48,5 +49,5 @@ urlpatterns = [
     path('api/v1/colleges/<int:pk>/students/', StudentGetPostRequestHandlerView.as_view(), name="student_get_post_rest_api"),
     path('api/v1/colleges/<int:college_id>/students/<int:pk>', StudentGetPutDeleteRequestHandlerClass.as_view(), name="student_get_put_delete_rest_api"),
 
-
+    path('templateview/',TemplateView.as_view(template_name="index.html"))
 ]

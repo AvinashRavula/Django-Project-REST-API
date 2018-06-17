@@ -33,7 +33,7 @@ class Mocktest1(models.Model):
     student = models.OneToOneField(Student,on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"Student (self.student.name) marks"
+        return "Student (self.student.name) marks"
 
 
 
