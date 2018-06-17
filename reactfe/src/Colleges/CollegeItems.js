@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const CollegeItem = (props) => {
     return (
         <tr>
-            <td><Link to={`/college/${props.college.id}`}>{props.college.name}</Link></td>
+            <td><Link to={`/onlineapp/templateview/college/${props.college.id}`}>{props.college.name}</Link></td>
             <td>{props.college.acronym}</td>
             <td>{props.college.location}</td>
             <td>{props.college.contact}</td>
